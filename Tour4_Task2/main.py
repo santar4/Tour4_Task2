@@ -15,7 +15,13 @@ from matplotlib import pyplot as plt
 from starlette.responses import RedirectResponse
 
 # Ініціалізація FastAPI
-app = FastAPI(debug=True)
+app = FastAPI(debug=True,
+              title="Project XPython Tour4/Task2",
+              description="## API developed by Dykov Max",
+              version="0.1b",
+              docs_url="/docs",
+              redoc_url="/api/documentation"
+              )
 
 # Підключення статичних файлів
 app.mount("/tables", StaticFiles(directory="tables"), name="tables")
