@@ -46,5 +46,5 @@
 pip install -r requirements.txt
 
 2. Запустіть проект цією командою у терміналі:
-```bash
+
 uvicorn main:app --reload
